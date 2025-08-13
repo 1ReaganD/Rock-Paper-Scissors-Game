@@ -22,3 +22,50 @@ h2{
     text-align: center;
     padding-top: 80px;
 }
+body{
+    background-color: blue;
+}
+#playable_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 80px;
+     margin-top: 80px;
+}
+#rocks{
+    height: 90px;
+    width: 90px;
+    transition: transform 0.5s ease;
+}
+#rockbackground{
+    padding: 5px;
+}
+#rockbackground:hover{
+    background-color: red;
+    transform: translateY(+10%);
+}
+#paper{
+    height: 90px;
+    width: 90px;
+    transition: transform 0.5;
+}
+#paperbackground{
+    padding: 5px;
+}
+#paperbackground:hover{
+    background-color: red;
+    transform: translateY(+10%);
+}
+#scissors{
+    height: 90px;
+    width: 90px;
+}
+#scissorsbackground{
+    padding: 5px;
+    transition:  background-color 5.5;
+}
+#scissorsbackground:hover{
+    background-color: red;
+    transform: translateY(+10%);
+}
