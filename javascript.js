@@ -60,6 +60,17 @@ function playRound(computerChoice, humanChoice) {
     computerScore++;
     computerScoreToHtml.textContent = computerScore;
   }
+  if (humanScore == 5) {
+    humanScoreToHtml.textContent = "Winner";
+    humanScore = 0;
+    computerScore = 0;
+    return;
+  } else if (computerScore == 5) {
+    computerScoreToHtml.textContent = "Winner";
+    computerScore = 0;
+    humanScore = 0;
+    return;
+  }
 }
 
 const rocks = document.querySelector("#rocks");
@@ -196,4 +207,6 @@ function getChoiceNameForHtml(choice) {
 const humanScoreToHtml = document.querySelector("#humanScore");
 
 const computerScoreToHtml = document.querySelector("#computerScore");
+
+
 
